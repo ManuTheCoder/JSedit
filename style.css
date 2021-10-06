@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+.toolbar {
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.toolbar {
+  width: calc(100% - 10px);
+	margin: 10px;
+	margin-bottom: 0;
+	word-break: keep-all;
+	padding: 10px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: auto;
+	white-space:nowrap;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+}
+.toolbar::-webkit-scrollbar {
+	display: none;
+}
+.toolbar select {
+  font-size: 15px;
+	border-radius: 4px;
+	width: auto !important;
+	padding: 10px !important;
+	appearance: none;
+	cursor: pointer;
+}
+select > option {
+	background: white;
+}
+select > option:hover {
+	background: #eee
+}
+select::-ms-expand {
+	display: none;
+}
+select::expand {
+    display: none;
+}
+.intLink {
+	display:inline-block;
+  border: 0;
+	border-radius: 4px;
+	height: 40px;
+	width: 40px;
+  margin: 0;
+  background: white;
+  padding: 6px;
+}
+.intLink:hover {
+	cursor: pointer;
+  background: rgba(100, 100, 255, 0.1);
+}
+.JSedit_textarea {
+  width: calc(100% - 10px);
+  height: 200px;
+  border: 1px #bbb solid;
+  border-radius: 2px;
+  padding: 12px;
+  margin: 10px;
+	margin-top: 0;
+  overflow: scroll;
+}
+.JSedit_textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+.JSedit_textarea #sourceText {
+  padding: 0;
+  margin: 0;
+  min-width: 498px;
+  min-height: 200px;
+}
+.toolbar select {
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  background: #fff;
+}
+.toolbar select:hover {
+  background: rgba(100, 100, 255, 0.1);
+}
+#editMode label {
+  cursor: pointer;
+}

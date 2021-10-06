@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<style>form {width: 90%;margin:auto;background: #fff;padding: 10px;} body {background: #eee} body {font-family: 'Roboto', sans-serif;}</style>
+</head>
+<body>
+	<center>
+		<h1>JSedit</h1>
+		<p>A minimalistic text editor!</p>
+		<h2>How to use</h2> 
+		<p>Download the files, and then add them to your project!</p>
+	</center>
+	<form action="">
+		<textarea name="" id="desc1" cols="30" rows="10"></textarea>
+		<p>
+			<pre>
+new JSedit('#desc1', {
+	hideMenus: true
+})
+			</pre>
+	</p>
+		<textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+		<p>
+			<pre>
+new JSedit('#desc1')
+			</pre>
+		</p>
+		
+	</form>
+	<script src="script.js"></script>
+	<script>
+		new JSedit('#desc')
+		new JSedit('#desc1', {
+			hideMenus: true
+		})
+	</script>
+</body>
+</html>
