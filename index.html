@@ -1,45 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<style>form {width: 90%;margin:auto;background: #fff;padding: 10px;} body {background: #eee} body {font-family: 'Roboto', sans-serif;}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<style>
+  form {width: 90%;margin:auto;background: #fff;padding: 10px;} body {background: #eee} body {font-family: 'Roboto', sans-serif;}
+  </style>
 </head>
 <body>
-	<center>
-		<h1>JSedit</h1>
-		<p>A minimalistic text editor!</p>
-		<h2>How to use</h2> 
-		<p>Download the files, and then add them to your project!</p>
-	</center>
-	<form action="">
-		<textarea name="" id="desc1" cols="30" rows="10"></textarea>
-		<p>
-			<pre>
+<br><br>
+
+<center>
+    <h1>JSedit</h1>
+    <p>A minimalistic text editor! Super lightweight, and easy to use!</p>
+    <h2>How to use</h2> 
+    <p>Download the files, and then add them to your project! Turn any textarea into a WYSIWYG editor! Need help? Press CTRL+U to see the source of this page</p>
+    <br>
+    <a style="text-decoration:none;background: #000;margin:10px;padding:10px;color:white;" href="script.js" download>Download JavaScript</a>
+    <a style="text-decoration:none;background: #000;margin:10px;padding:10px;color:white;" href="script.min.js" download>Download JavaScript (minified)</a>
+    <a style="text-decoration:none;background: #000;margin:10px;padding:10px;color:white;" href="style.css" download>Download CSS</a>
+</center>
+<br><br>
+<form action="">
+    <textarea name="" id="desc1" cols="30" rows="10"></textarea>
+    <p>
+        <pre>
 new JSedit('#desc1', {
-	hideMenus: true
+hideMenus: true
 })
-			</pre>
-	</p>
-		<textarea name="desc" id="desc" cols="30" rows="10"></textarea>
-		<p>
-			<pre>
+</pre>
+</p>
+    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+    <p>
+        <pre>
 new JSedit('#desc1')
-			</pre>
-		</p>
-		
-	</form>
-	<script src="script.js"></script>
-	<script>
-		new JSedit('#desc')
-		new JSedit('#desc1', {
-			hideMenus: true
-		})
-	</script>
+        </pre>
+    </p>
+</form>
+<script src="script.js"></script>
+<script>
+    new JSedit('#desc')
+    new JSedit('#desc1', {
+        hideMenus: true
+    })
+</script>
 </body>
 </html>
